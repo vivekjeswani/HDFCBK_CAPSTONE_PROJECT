@@ -1,0 +1,1 @@
+ssh -i "learningDevopsTWSB3.pem" ubuntu@ec2-54-91-199-193.compute-1.amazonaws.com
