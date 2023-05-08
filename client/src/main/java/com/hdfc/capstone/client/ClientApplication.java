@@ -1,13 +1,14 @@
-package com.hdfc.capstone.ClientManagement;
+package com.hdfc.capstone.client;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ClientManagementApplication {
+public class ClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClientManagementApplication.class, args);
+		SpringApplication.run(ClientApplication.class, args);
 	}
 
 }

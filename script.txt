@@ -1,0 +1,13 @@
+Hello, ... normal greeting....& intro, Im gonna present my capstone project- Employee system,
+Pg-2, This is my table of contents, I will be going through each in detail,
+Pg-3 About the Project- So what are we doing in this project basically as per the guidelines, i have created basic springboot application in which we are just playing with employees database that too with id , name & dob.
+Pg-4 In this project I have used MySQL database which has three fields Employee ID, Name & Date-of-birth.
+I have then created spring boot application & pushed my code to git repo.
+In this project I have added some additional features such as Log file which logs date & timestamp of our processes also I have updated web services to use HTTPS & I have also written CURL commands to call it.
+I have used AES to encrypt the date of birth field for admin
+I have tested API on postman.
+Pg-5 These are m USE CASE & SEQUENCE diagram ( small info about fields)
+Pg-6 Design of database table
+Pg-7 spring boot flow architecture
+Pg-8 Detail overview of flow of my project
+Pg-9   

@@ -1,4 +1,4 @@
-package com.hdfc.capstone.ClientManagement.controller;
+package com.hdfc.capstone.client.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.hdfc.capstone.ClientManagement.exception.EmployeeNotFoundException;
-import com.hdfc.capstone.ClientManagement.vo.EmployeeVo;
+import com.hdfc.capstone.client.exception.EmployeeNotFoundException;
+import com.hdfc.capstone.client.vo.EmployeeVO;
 
 @RestController
 @RequestMapping("/client")
@@ -19,12 +19,12 @@ public class ClientController {
   private String baseUrl = "https://localhost:8086/emp/findEmp/";
 
   @GetMapping("/getdata/{employeeID}")
-  public EmployeeVo getEmployeeById(@PathVariable int employeeID) throws Exception {
-    EmployeeVo employeeVo = rest.getForObject(baseUrl + employeeID, EmployeeVo.class);
-    if (employeeVo == null) {
+  public EmployeeVO getEmployeeById(@PathVariable int employeeID) throws Exception {
+    EmployeeVO employeeVO = rest.getForObject(baseUrl + employeeID, EmployeeVO.class);
+    if (employeeVO == null) {
       throw new EmployeeNotFoundException("Employee not found with ID: " + employeeID);
     }
-    employeeVo.setDateOfBirth(EmployeeVo.decrypt(employeeVo.getDateOfBirth()));
-    return employeeVo;
+    employeeVO.setDateOfBirth(EmployeeVO.decrypt(employeeVO.getDateOfBirth()));
+    return employeeVO;
   }
 }

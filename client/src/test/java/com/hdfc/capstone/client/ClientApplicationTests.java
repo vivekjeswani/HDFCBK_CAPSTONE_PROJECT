@@ -1,10 +1,10 @@
-package com.hdfc.capstone.ClientManagement;
+package com.hdfc.capstone.client;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ClientManagementApplicationTests {
+class ClientApplicationTests {
 
 	@Test
 	void contextLoads() {

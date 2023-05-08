@@ -1,4 +1,4 @@
-package com.hdfc.capstone.ClientManagement.entity;
+package com.hdfc.capstone.client.entity;
 
 import java.sql.Date;
 

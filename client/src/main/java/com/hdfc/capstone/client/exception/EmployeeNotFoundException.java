@@ -1,4 +1,4 @@
-package com.hdfc.capstone.ClientManagement.exception;
+package com.hdfc.capstone.client.exception;
 
 public class EmployeeNotFoundException extends RuntimeException {
 

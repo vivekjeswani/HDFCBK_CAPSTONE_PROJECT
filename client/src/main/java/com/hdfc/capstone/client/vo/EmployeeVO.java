@@ -1,11 +1,11 @@
-package com.hdfc.capstone.ClientManagement.vo;
+package com.hdfc.capstone.client.vo;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.springframework.util.Base64Utils;
 
-public class EmployeeVo {
+public class EmployeeVO {
 	
 	private int employeeId;
 	private String employeeName;
@@ -35,14 +35,14 @@ public class EmployeeVo {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public EmployeeVo(int employeeId, String employeeName, String dateOfBirth) {
+	public EmployeeVO(int employeeId, String employeeName, String dateOfBirth) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
 		this.dateOfBirth = dateOfBirth;
 	}
 	
-	public EmployeeVo() {
+	public EmployeeVO() {
 		super();
 	}
 
